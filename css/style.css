@@ -399,7 +399,10 @@ header{
     float: left;
 }
 .what_we_do .text .line div h1{width: 300px;}
-.what_we_do .text .line div p{width: 498px;vertical-align: bottom;}
+.what_we_do .text .line div p{
+    width: 498px;
+    vertical-align: bottom;
+}
 .what_we_do .text img{
     display: inline-block;
     vertical-align: top;
