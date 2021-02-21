@@ -107,7 +107,8 @@ menu #Auto_park_a{
 
 .Urgent_help{
     height: 434px;
-    width: 100%;
+    width: 720px;
+    margin: 0 auto;
     background-image: url(../img/bg_Urgent_help.png);
     background-size: auto 100%;
     background-position: center;
@@ -120,7 +121,7 @@ menu #Auto_park_a{
     padding-top: 83px;
     margin-bottom: 50px;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 .Urgent_help img{
     width: 33px;
@@ -137,19 +138,20 @@ menu #Auto_park_a{
 
 /* Evacuation buttons soc */
 .buttons{
-    width: 656.77px;
+    width: 720px;
     margin: 3px auto 110px;
     background-color: rgba(0, 0, 0, 0.05);
     box-shadow: 0px 8px 16px 0px #00000012;
 }
 .buttons div{
-    width: 216px;
+    width: 237px;
     height: 128px;
     margin-right: 3px;
     display: inline-block;
     text-align: center;
     background-color: #fff;
     cursor: pointer;
+    margin: 0 auto;
 }
 .buttons div:last-child{
     margin-right: 0px;
@@ -330,14 +332,14 @@ menu #Auto_park_a{
 
 .Our_service_station_is{
     height: 565px;
-    width: 100%;
+    width: 720px;
+    margin: 0 auto 10px;
     background-image: url(../img/sto/Nashe_sto.png);
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     text-align: left;
-    margin-bottom: 10px;
 }
 .Our_service_station_is .info{
     width: 500px;
@@ -437,7 +439,8 @@ menu #Auto_park_a{
 
 .Yandex_tax{
     height: 627px;
-    width: 100%;
+    width: 720px;
+    margin: 0 auto;
     background-image: url(../img/sto/Nashe_sto.png);
     background-size: auto 100%;
     background-position: center;
