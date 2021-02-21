@@ -253,6 +253,8 @@ menu #Auto_park_a{
     text-align: center;
     margin: 0 auto;
     background-color: #fff;
+    box-shadow: 0px 8px 16px 0px #00000012;
+
 }
 .price .prices{
     margin: 0 auto;
@@ -290,10 +292,14 @@ menu #Auto_park_a{
 }
 
 /* Evacuation Forma weeeeeeee */
+#Evacuation .form {
+    box-shadow: none;
+}
 .form{
     padding-top: 28px;
     text-align: center;
     background-color: #fff;
+    box-shadow: 0px 8px 16px 0px #00000012;
 }
 .form h1{
     font-size: 2em;
@@ -301,8 +307,10 @@ menu #Auto_park_a{
 }
 .form p{
     font-size: 1.5em;
+    width: 400px;
     color: #15020230;
-    margin-bottom: 59px;
+    margin:0 auto 59px;
+
 }
 .form input{
     width: 387px;
@@ -344,6 +352,9 @@ menu #Auto_park_a{
 .Our_service_station_is .info{
     width: 500px;
     margin: 0 auto;
+}
+.treb .info img{
+
 }
 .Our_service_station_is h1{
     padding-top: 150px;
@@ -425,7 +436,9 @@ menu #Auto_park_a{
 /* STO map */
 .map{
     width: 600px;
-    margin: 110px auto ;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
 }
 .map .info{
     position: relative;

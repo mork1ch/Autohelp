@@ -341,6 +341,10 @@ header{
     width: 200px;
     margin-right: 30px;
 }
+.treb .info span{
+    
+}
+
 .treb .info .info{
     display: inline-block;
     text-align: left;
