@@ -214,7 +214,7 @@ menu #Auto_park_a{
 
 /* Evacuation grant */
 .grant{
-    width: 100%;
+    width: 720px;
     height: 373px;
     margin: 0 auto 80px;
     background-image: url(../img/grant.png);
@@ -249,7 +249,7 @@ menu #Auto_park_a{
 
 /* Evacuation price */
 .price{
-    width: 100%;
+    width: 720px;
     text-align: center;
     margin: 0 auto;
     background-color: #fff;
@@ -371,7 +371,7 @@ menu #Auto_park_a{
 
 /* Sto when */
 .when{
-    width: 100%;
+    width: 720px;
     text-align: left;
     padding: 16px 0 39px;
     background-color: #fff;
@@ -495,7 +495,7 @@ menu #Auto_park_a{
 
 /* Auto_park what_u_can */
 .what_u_can{
-    width: 100%;
+    width: 720px;
     text-align: left;
     padding: 16px 0 39px;
 }
@@ -530,7 +530,7 @@ menu #Auto_park_a{
 /* Auto_park treb */
 .treb{
     padding: 28px 0 70px;
-    width: 100%;
+    width: 720px;
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
@@ -561,7 +561,7 @@ menu #Auto_park_a{
 
 /* Foooter */
 footer{
-    width: 100%;
+    width: 720px;
     height: 88px;
     background-color: #565151;
     margin-top: 80px;
