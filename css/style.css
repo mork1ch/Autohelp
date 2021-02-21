@@ -278,6 +278,9 @@ header{
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px #00000012;
 }
+.form_for_user .treb .info .img{
+    width: 35px;
+}
 .form_for_user h1{
     font-size: 2.5em;
     color: #150202;
@@ -342,7 +345,7 @@ header{
     margin-right: 30px;
 }
 .treb .info span{
-    
+
 }
 
 .treb .info .info{

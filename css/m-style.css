@@ -354,7 +354,7 @@ menu #Auto_park_a{
     margin: 0 auto;
 }
 .treb .info img{
-
+    width: 41px;
 }
 .Our_service_station_is h1{
     padding-top: 150px;
@@ -513,7 +513,7 @@ menu #Auto_park_a{
 .what_u_can h1{
     width: 330px;
     color: #150202;
-    margin-bottom: 12px;
+    margin-bottom: 50px;
     margin-right: 0;
 }
 .what_u_can .we_work .info span{
