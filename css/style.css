@@ -384,7 +384,12 @@ header{
     width: 1161px;
     margin: 0 auto;
 }
+.what_we_do .text {
+    margin-top: 110px;
+}
+
 .what_we_do .text div{
+    width: 300px;
     margin-bottom: 50px;
 }
 
