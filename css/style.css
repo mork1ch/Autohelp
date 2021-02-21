@@ -345,8 +345,8 @@ header{
     width: 200px;
     margin-right: 30px;
 }
-.treb .info span{
-
+.treb .info span img{
+    margin-right: 10px;
 }
 
 .treb .info .info{
