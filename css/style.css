@@ -382,19 +382,24 @@ header{
 
 .what_we_do{
     width: 1161px;
-    margin: 0 auto;
+    margin: 0 auto 15gi0px;
 }
 .what_we_do .text {
     margin-top: 110px;
 }
-.what_we_do .text .line {width: 1161px;}
+.what_we_do .text .line {width: 1161px;margin: 0 auto;}
 .what_we_do .text .line .block{
-    width: 600px;
+    width: 500px;
     display: inline-block;
     margin-bottom: 50px;
+    vertical-align: top;
+    float: right;
+}
+.what_we_do .text .line .block:first-child{
+    float: left;
 }
 .what_we_do .text .line div h1{width: 300px;}
-.what_we_do .text .line div p{width: 300px;vertical-align: bottom;}
+.what_we_do .text .line div p{width: 498px;vertical-align: bottom;}
 .what_we_do .text img{
     display: inline-block;
     vertical-align: top;
