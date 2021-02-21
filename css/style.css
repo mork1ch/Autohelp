@@ -22,13 +22,17 @@ button{
     margin-bottom: 35px;
     outline: none;
     cursor: pointer;
+    transition: 1s ease;
 }
 button:active{
     border:4px solid #9C9C9C;
     background-color: #9C9C9C;
     color: #fff;
+    transition: 1s ease;
 }
 button:hover{
+    transition: 1s ease;
+    background-color: #F6080A;
     box-shadow: 2px 2px 50px 0px #FF000020;
 }
 .clearfix{clear: both;}
