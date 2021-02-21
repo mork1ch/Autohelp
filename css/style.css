@@ -384,6 +384,14 @@ header{
     width: 1161px;
     margin: 0 auto;
 }
+.what_we_do .text div{
+    margin-bottom: 50px;
+}
+
+.what_we_do .text .info{
+    display: inline-block;
+}
+
 /* footer */
 footer{
     width: 100%;
