@@ -379,7 +379,11 @@ header{
 }
 #Sto .hello .info .when h1{margin-bottom: 0;}
 #Sto .hello .info .when p{margin-bottom: 0;}
-.wha
+
+.what_we_do{
+    width: 1161px;
+    margin: 0 auto;
+}
 /* footer */
 footer{
     width: 100%;
@@ -402,6 +406,7 @@ footer menu{
 footer menu a{
     text-decoration: underline;
     margin-right: 50px;
+    color: #000;
 }
 footer menu a:last-child{
     margin-right: 0;
