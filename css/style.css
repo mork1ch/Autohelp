@@ -280,6 +280,7 @@ header{
 }
 .form_for_user .treb .info .img{
     width: 35px;
+    margin-right: 4px;
 }
 .form_for_user h1{
     font-size: 2.5em;
