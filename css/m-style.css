@@ -296,6 +296,7 @@ menu #Auto_park_a{
     box-shadow: none;
 }
 .form{
+    width: 720px;
     padding-top: 28px;
     text-align: center;
     background-color: #fff;
