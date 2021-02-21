@@ -28,6 +28,9 @@ button:active{
     background-color: #9C9C9C;
     color: #fff;
 }
+button:hover{
+    box-shadow: 2px 2px 50px 0px #FF000020;
+}
 .clearfix{clear: both;}
 .left{float: left;}
 .right{float: right;}
@@ -44,7 +47,7 @@ header{
     color: #fff;
     padding-top: 100px;
 }
-header .left .logo{
+.left .logo{
     width: 75px;
     height: 75px;
     margin-right: 30px;
@@ -55,19 +58,19 @@ header .left .logo{
     vertical-align: top;
     display: inline-block;
 }
-header .left .text_logo{
+.left .text_logo{
     display: inline-block;
 }
-header .left .text_logo h1{
+.left .text_logo h1{
     text-transform: uppercase;
 }
-header .left .text_logo p{
+.left .text_logo p{
     color: #BFBFBF;
 }
-header .right{text-align: right;}
-header .right .soc a{margin-right: 38px;}
-header .right .soc a:last-child{margin-right: 0;}
-header .right .soc div{
+.right{text-align: right;}
+.right .soc a{margin-right: 35px;}
+.right .soc a:last-child{margin-right: 0;}
+.right .soc div{
     width: 27px;
     height: 27px;
     background-repeat: no-repeat;
@@ -76,20 +79,20 @@ header .right .soc div{
     display: inline-block;
     cursor: pointer;
 }
-header .right .soc .tik_tok{background-image: url(../img/tik-tok.png);}
-header .right .soc .youtube{background-image: url(../img/youtube.png);}
-header .right .soc .instagram{background-image: url(../img/instagram.png);}
-header .right .tel{margin-top: 20px;}
-header .right .tel img{
+.right .soc .tik_tok{background-image: url(../img/tik-tok.png);}
+.right .soc .youtube{background-image: url(../img/youtube.png);}
+.right .soc .instagram{background-image: url(../img/instagram.png);}
+.right .tel{margin-top: 20px;}
+.right .tel img{
     display: inline-block;
     width: 23px;
     height: 23px;
     vertical-align: middle;
     margin-right: 13px;
 }
-header .right .tel p{
+.right .tel p{
     display: inline-block;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 /* Evacuation hello*/
@@ -106,10 +109,11 @@ header .right .tel p{
     color: #fff;
 }
 .hello .info .left{
-    width: 633px;
+    width: 800px;
 }
 .hello .info .left h1{
     margin-bottom: 26px;
+    width: 500px;
 }
 .hello .info .left p{
     font-size: 1.2em;
@@ -118,7 +122,7 @@ header .right .tel p{
 .hello .info .left .information .first_block{
     display: inline-block;
     margin-right: 50px;
-    width: 260px;
+    width: 265px;
 }
 .hello .info .left .information .second_block{
     display: inline-block;
@@ -254,7 +258,50 @@ header .right .tel p{
     font-size: 2em;
 }
 
-
+/* Evacuation form */
+.form{
+    height: 825px;
+    width: 100%;
+    padding-top: 247px;
+    background-image: url(../img/pc_ver/bg_form_Evacuation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto 100% ;
+}
+.form_for_user{
+    text-align: center;
+    height: 555px;
+    margin: 0 auto;
+    padding: 54px;
+    width: 882px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px #00000012;
+}
+.form_for_user h1{
+    font-size: 2.5em;
+    color: #150202;
+}
+.form_for_user p{
+    font-size: 1.5em;
+    color: #15020230;
+    margin-bottom: 59px;
+}
+.form_for_user input{
+    width: 387px;
+    height: 74px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    display: block;
+    outline: none;
+    border: 2px solid #dadada;
+    cursor: text;
+}
+.form_for_user input:last-child{
+    margin-bottom: 36px;
+}
 /* Auto_park */
 #Auto_park .hello{
     height: 1080px;
@@ -262,6 +309,49 @@ header .right .tel p{
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100% ;
+}
+
+/* treb */
+#Auto_park .info .left .information .cercle{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../img/pc_ver/cerkle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    vertical-align: middle;
+}
+#Auto_park .hello .info .left .information .second_block{
+    display: inline-block;
+    width: 215px;
+    margin-bottom: 72px;
+}
+#Auto_park .form{
+    background-color: #fff;
+    background-image: none;
+}
+#Auto_park .form_for_user{
+    border-radius: 0;
+}
+.treb h1{
+    margin-bottom: 52px;
+}
+.treb .info span{
+    width: 200px;
+    margin-right: 30px;
+}
+.treb .info .info{
+    display: inline-block;
+    text-align: left;
+}
+
+.treb .info h1{
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
+.treb .info p{
+    font-size: 1em;
 }
 
 /* Sto hello */
@@ -272,3 +362,44 @@ header .right .tel p{
     background-position: center;
     background-size: auto 100% ;
 }
+#Sto .hello .info .when{
+    width: 280px;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+    top: 18px;
+}
+#Sto .hello .info .when h1{margin-bottom: 0;}
+#Sto .hello .info .when p{margin-bottom: 0;}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #fff;
+    height: 149px;
+    padding-top: 74px;
+}
+footer .info{
+    width: 1161px;
+    margin: 0 auto;
+}
+footer menu{
+    position: relative;
+    top: 30px;
+    width: 350px;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+}
+footer menu a{
+    text-decoration: underline;
+    margin-right: 50px;
+}
+footer menu a:last-child{
+    margin-right: 0;
+}
+footer .right{
+    position: relative;
+    bottom: 20px;
+}
+footer .right .tel{margin-top: 17px;}
