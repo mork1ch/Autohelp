@@ -272,9 +272,11 @@ header{
     background-position: center;
     background-size:auto 100% ;
 }
+#Evacuation .form_for_user{
+    height: 555px;
+}
 .form_for_user{
     text-align: center;
-    height: 555px;
     margin: 0 auto;
     padding: 54px;
     width: 882px;

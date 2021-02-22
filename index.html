@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/comp_script_menu.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/comp_script_menu.js' %}" type="text/javascript"></script>
     <title>Autohelp</title>
+    <style>
+        .error{color :F6080A;font-family: Regular;}
+        .send{color: #22962E; font-family: Regular;}
+    </style>
+
 </head>
 <body>
     <div id="Evacuation">
@@ -27,7 +34,7 @@
                         <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
                     </div>
                     <div class="tel">
-                        <img src="img/tephone.png" alt="">
+                        <img src="{% static 'img/tephone.png' %}" alt="">
                         <p>+7 (931) 824-63-92</p>
                     </div>
                 </div>
@@ -41,34 +48,34 @@
                     <div class="information">
                         <div class="first_block">
                             <span class="plus">
-                                <img src="img/group.png">
+                                <img src="{% static 'img/group.png' %}">
                                 <p>Отличный персонал!</p>
                             </span>
                             <span class="plus">
-                                <img src="img/cash.png">
+                                <img src="{% static 'img/cash.png' %}">
                                 <p>Выгодные цены!</p>
                             </span>
                         </div>
                         <div class="second_block">
                             <span class="plus">
-                                <img src="img/Vector car.png">
+                                <img src="{% static 'img/Vector car.png' %}">
                                 <p>Лучшие эвакуаторы!</p>
                             </span>
                             <span class="plus">
-                                <img src="img/time.png">
+                                <img src="{% static 'img/time.png' %}">
                                 <p>Круглосуточно!</p>
                             </span>
                         </div>
                     </div>
-                    <button>Свяжитесь со мной</button>
+                    <a href="#form1"><button>Свяжитесь со мной</button></a>
                 </div>
     
                 <div class="right">
                     <menu>
                         <ul>
-                            <li><a id="Evacuation_a"    onclick="Evacuation()">Эвакуация    </a><img src="img/pc_ver/Ellipse.png" id="Evacuation_img"></li>
-                            <li><a id="Auto_park_a"     onclick="Auto_park()">Авто парк     </a><img src="img/pc_ver/Ellipse.png" id="Auto_park_img"></li>
-                            <li><a id="Sto_a"           onclick="Sto()">СТО                 </a><img src="img/pc_ver/Ellipse.png" id="Sto_img"></li>
+                            <li><a id="Evacuation_a"    onclick="Evacuation()">Эвакуация    </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Evacuation_img"></li>
+                            <li><a id="Auto_park_a"     onclick="Auto_park()">Авто парк     </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Auto_park_img"></li>
+                            <li><a id="Sto_a"           onclick="Sto()">СТО                 </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Sto_img"></li>
                         </ul>
                     </menu>
                 </div>
@@ -83,31 +90,31 @@
             <p class="header">Стоимость транспортировки машин всегда рассчитывается в индивидуальном порядке.</p>
             <div class="merchandisers">
                 <div class="merchandise">
-                    <img src="img/truck(icon).png" alt="">
+                    <img src="{% static 'img/truck(icon).png' %}" alt="">
                     <h2>Грузовики</h2>
                     <p>Массой до 8 т.</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise">
-                    <img src="img/jeep.png" alt="">
+                    <img src="{% static 'img/jeep.png' %}" alt="">
                     <h2>Кросоверы</h2>
                     <p>Массой до 6 т</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise" style="margin-right: 0;">
-                    <img src="img/moto(icon).png" alt="">
+                    <img src="{% static 'img/moto(icon).png' %}" alt="">
                     <h2>Мототехника</h2>
                     <p>Массой до 1 т</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise">
-                    <img src="img/car(icon).png" alt="">
+                    <img src="{% static 'img/car(icon).png' %}" alt="">
                     <h2>Легковые</h2>
                     <p>Массой до 5 т.</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise">
-                    <img src="img/Pricep.png" alt="">
+                    <img src="{% static 'img/Pricep.png' %}" alt="">
                     <h2>Прицепы</h2>
                     <p>Массой до 11 т</p>
                     <span class="cost">от 1500₽</span>
@@ -115,13 +122,31 @@
             </div>
         </div>
 
-        <div class="form">
+        <div class="form" id="form1">
             <div class="form_for_user">
-                <h1>Готовы ?</h1>
-                <p>Заполните форму</p>
-                <input type="text" placeholder="Номер телефона">
-                <input type="text" placeholder="Имя">
-                <button>Рассчитать стоимость</button>
+                <form action="." method="post">
+                    {% csrf_token %}
+                        <h1>Готовы ?</h1>
+                        <p>Заполните форму</p>
+                        {{ form.phone }}
+                        {% if form.errors %}
+                            <div class="error">
+                                {% for error in form.phone.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                        {% endif %}
+                        {{ form.name }}
+
+                        {% if press == "1.1" %}
+                            <div class="send">
+                                <span>Ваша заявка успешно отправлена</span>
+                            </div>
+                        {% else %}
+                            <button name='button' onclick="Evacuation()", onclick="send({{ press }})" value="evacuation">Рассчитать стоимость</button>
+                        {% endif %}
+                </form>
             </div>
         </div>
 
@@ -145,7 +170,7 @@
                         <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
                     </div>
                     <div class="tel">
-                        <img src="img/tephone.png" alt="">
+                        <img src="{% static 'img/tephone.png' %}" alt="">
                         <p>+7 (931) 824-63-92</p>
                     </div>
                 </div>
@@ -178,15 +203,15 @@
                             </span>
                         </div>
                     </div>
-                    <button>Свяжитесь со мной</button>
+                    <a href="#form2"><button>Свяжитесь со мной</button></a>
                 </div>
     
                 <div class="right">
                     <menu>
                         <ul>
-                            <li><a id="Evacuation_a2"    onclick="Evacuation()">Эвакуация    </a><img src="img/pc_ver/Ellipse.png" id="Evacuation_img2"></li>
-                            <li><a id="Auto_park_a2"     onclick="Auto_park()">Авто парк     </a><img src="img/pc_ver/Ellipse.png" id="Auto_park_img2"></li>
-                            <li><a id="Sto_a2"           onclick="Sto()">СТО                 </a><img src="img/pc_ver/Ellipse.png" id="Sto_img2"></li>
+                            <li><a id="Evacuation_a2"    onclick="Evacuation()">Эвакуация    </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Evacuation_img2"></li>
+                            <li><a id="Auto_park_a2"     onclick="Auto_park()">Авто парк     </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Auto_park_img2"></li>
+                            <li><a id="Sto_a2"           onclick="Sto()">СТО                 </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Sto_img2"></li>
                         </ul>
                     </menu>
                 </div>
@@ -196,27 +221,27 @@
 
         <div class="clearfix"></div>
 
-        <div class="form">
+        <div class="form"  id="form2">
                 <div class="form_for_user">
                     <h1>Требования</h1>
                     <div class="treb">
                         <div class="info">
                             <span>
-                                <img src="img/done.png" alt="">
+                                <img src="{% static 'img/done.png' %}" alt="">
                                 <div class="info">
                                     <h1>Возраст</h1>
                                     <p>от 21 года</p>
                                 </div>
                             </span>
                             <span>
-                                <img src="img/done.png" alt="">
+                                <img src="{% static 'img/done.png' %}" alt="">
                                 <div class="info">
                                     <h1>Стаж</h1>
                                     <p>от 3-х лет</p>
                                 </div>
                             </span>
                             <span>
-                                <img src="img/done.png" alt="">
+                                <img src="{% static 'img/done.png' %}" alt="">
                                 <div class="info">
                                     <h1>Смартфон</h1>
                                     <p>Andoid/IOS</p>
@@ -224,9 +249,29 @@
                             </span>
                         </div>
                     </div>
-                    <input type="text" placeholder="Номер телефона">
-                    <input type="text" placeholder="Имя">
-                    <button>Рассчитать стоимость</button>
+                    <form action="." method="post">
+                    {% csrf_token %}
+                        <h1>Готовы ?</h1>
+                        <p>Заполните форму</p>
+                        {{ form.phone }}
+                        {% if form.errors %}
+                            <div class="error">
+                                {% for error in form.phone.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                        {% endif %}
+                        {{ form.name }}
+
+                        {% if press == "1.2" %}
+                            <div class="send">
+                                <span>Ваша заявка успешно отправлена</span>
+                            </div>
+                        {% else %}
+                            <button name='button' onclick="Auto_park()" value="avtoPark">Рассчитать стоимость</button>
+                        {% endif %}
+                    </form>
                 </div>
         </div>
 
@@ -251,7 +296,7 @@
                         <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
                     </div>
                     <div class="tel">
-                        <img src="img/tephone.png" alt="">
+                        <img src="{% static 'img/tephone.png' %}" alt="">
                         <p>+7 (931) 824-63-92</p>
                     </div>
                 </div>
@@ -262,7 +307,7 @@
                 <div class="left">
                     <h1>Наша станция технического обслуживания</h1>
                     <p>Лучшее обслуживание, отличная команда и доступные цены</p>
-                    <button>Свяжитесь со мной</button>
+                    <a href="#form3"><button>Свяжитесь со мной</button></a>
                     <div class="when">
                         <h1>Мы работаем</h1>
                         <p>7 дней в неделю с 9:00 до 23:00</p>
@@ -272,9 +317,9 @@
                 <div class="right">
                     <menu>
                         <ul>
-                            <li><a id="Evacuation_a3"    onclick="Evacuation()">Эвакуация    </a><img src="img/pc_ver/Ellipse.png" id="Evacuation_img3"></li>
-                            <li><a id="Auto_park_a3"     onclick="Auto_park()">Авто парк     </a><img src="img/pc_ver/Ellipse.png" id="Auto_park_img3"></li>
-                            <li><a id="Sto_a3"           onclick="Sto()">СТО                 </a><img src="img/pc_ver/Ellipse.png" id="Sto_img3"></li>
+                            <li><a id="Evacuation_a3"    onclick="Evacuation()">Эвакуация    </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Evacuation_img3"></li>
+                            <li><a id="Auto_park_a3"     onclick="Auto_park()">Авто парк     </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Auto_park_img3"></li>
+                            <li><a id="Sto_a3"           onclick="Sto()">СТО                 </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Sto_img3"></li>
                         </ul>
                     </menu>
                 </div>
@@ -288,14 +333,14 @@
             <div class="text">
                 <div class="line">
                     <div class="block">
-                        <img src="img/sto/diagnostik.png">
+                        <img src="{% static 'img/sto/diagnostik.png' %}">
                         <div class="info">
                             <h1>Диагностика</h1>
                             <p>Комплексная диагностика автомобилей всех марок в СПб.</p>
                         </div>
                     </div>
                     <div class="block">
-                        <img src="img/sto/remont.png">
+                        <img src="{% static 'img/sto/remont.png' %}">
                         <div class="info">
                             <h1>Ремонт</h1>
                             <p>Выполняем более 200 видов работ для 70 марок автомобилей, запчасти в наличии.</p>
@@ -304,14 +349,14 @@
                 </div>
                 <div class="line">
                     <div class="block">
-                        <img src="img/sto/tex_obsl.png">
+                        <img src="{% static 'img/sto/tex_obsl.png' %}">
                         <div class="info">
                             <h1>Тех обслуживание</h1>
                             <p>Проверка, регулировка узлов и замена тех. жидкостей, согласно рекомендациям завода производителя.</p>
                         </div>
                     </div>
                     <div class="block">
-                        <img src="img/sto/maliar.png">
+                        <img src="{% static 'img/sto/maliar.png' %}">
                         <div class="info">
                             <h1>Малярный цех</h1>
                             <p>Выполнение покрасочных работ любой сложности, различные виды и типы покраски.</p>
@@ -320,7 +365,7 @@
                 </div>
                 <div class="line">
                     <div class="block">
-                        <img src="img/sto/skyp_bit_auto.png">
+                        <img src="{% static 'img/sto/skyp_bit_auto.png' %}">
                         <div class="info">
                             <h1>Скупка битых авто</h1>
                             <p>Покупка вашего автомобиля в любому стостоянии по выгодной цене</p>
@@ -331,27 +376,27 @@
             <div class="clearfix"></div>
         </div>
 
-        <div class="form">
+        <div class="form" id="form3">
             <div class="form_for_user">
                 <h1>Требования</h1>
                 <div class="treb">
                     <div class="info">
                         <span>
-                            <img src="img/done.png" alt="">
+                            <img src="{% static 'img/done.png' %}" alt="">
                             <div class="info">
                                 <h1>Возраст</h1>
                                 <p>от 21 года</p>
                             </div>
                         </span>
                         <span>
-                            <img src="img/done.png" alt="">
+                            <img src="{% static 'img/done.png' %}" alt="">
                             <div class="info">
                                 <h1>Стаж</h1>
                                 <p>от 3-х лет</p>
                             </div>
                         </span>
                         <span>
-                            <img src="img/done.png" alt="">
+                            <img src="{% static 'img/done.png' %}" alt="">
                             <div class="info">
                                 <h1>Смартфон</h1>
                                 <p>Andoid/IOS</p>
@@ -359,9 +404,29 @@
                         </span>
                     </div>
                 </div>
-                <input type="text" placeholder="Номер телефона">
-                <input type="text" placeholder="Имя">
-                <button>Рассчитать стоимость</button>
+                <form action="." method="post">
+                    {% csrf_token %}
+                        <h1>Готовы ?</h1>
+                        <p>Заполните форму</p>
+                        {{ form.phone }}
+                        {% if form.errors %}
+                            <div class="error">
+                                {% for error in form.phone.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                        {% endif %}
+                        {{ form.name }}
+
+                        {% if press == "1.3" %}
+                            <div class="send">
+                                <span>Ваша заявка успешно отправлена</span>
+                            </div>
+                        {% else %}
+                            <button name='button' onclick="send({{ press }})" value="STO">Рассчитать стоимость</button>
+                        {% endif %}
+                </form>
             </div>
         </div>
 
@@ -388,7 +453,7 @@
                     <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
                 </div>
                 <div class="tel">
-                    <img src="img/pc_ver/tel.png" alt="">
+                    <img src="{% static 'img/pc_ver/tel.png' %}" alt="">
                     <p>+7 (931) 824-63-92</p>
                 </div>
             </div>
