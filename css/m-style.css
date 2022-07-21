@@ -298,6 +298,7 @@ menu #Auto_park_a{
 .form{
     width: 720px;
     padding-top: 28px;
+    margin: 0 auto;
     text-align: center;
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px #00000012;
@@ -376,14 +377,14 @@ menu #Auto_park_a{
     text-align: left;
     padding: 16px 0 39px;
     background-color: #fff;
-}
+    margin: 0 auto;
+    }
 .when .we_work{
     width: 600px;
     margin: 0 auto;
 }
 .when .info{
     width: 490px;
-    margin: 0 auto;
     padding-left: 35px;
     border-left: 10px solid #F03738;
     float: left;
@@ -497,12 +498,12 @@ menu #Auto_park_a{
 /* Auto_park what_u_can */
 .what_u_can{
     width: 720px;
+    margin: 0 auto;
     text-align: left;
     padding: 16px 0 39px;
 }
 .what_u_can .we_work{
     width: 600px;
-    margin: 0 auto;
 }
 .what_u_can .info{
     width: 600px;
@@ -534,6 +535,8 @@ menu #Auto_park_a{
     width: 720px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 2;
     background-color: #fff;
 }
 .treb h1{
@@ -562,7 +565,7 @@ menu #Auto_park_a{
 
 /* Foooter */
 footer{
-    width: 720px;
+    width: 100%;
     height: 88px;
     background-color: #565151;
     margin-top: 80px;

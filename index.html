@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js/comp_script_menu.js' %}" type="text/javascript"></script>
+    <link rel="stylesheet" href='css/style.css'>
     <title>Autohelp</title>
-    <style>
-        .error{color :F6080A;font-family: Regular;}
-        .send{color: #22962E; font-family: Regular;}
-    </style>
+    <script src="js/comp_script_menu.js"></script>
 
 </head>
+
 <body>
     <div id="Evacuation">
 
@@ -26,15 +22,21 @@
                         <p>помощь на дорогах</p>
                     </div>
                 </div>
-        
+
                 <div class="right">
                     <div class="soc">
-                        <a href="https://vm.tiktok.com/ZSJ1HBccP/"><div class="tik_tok"></div></a>
-                        <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw"><div class="youtube"></div></a>
-                        <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
+                        <a href="https://vm.tiktok.com/ZSJ1HBccP/">
+                            <div class="tik_tok"></div>
+                        </a>
+                        <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw">
+                            <div class="youtube"></div>
+                        </a>
+                        <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag">
+                            <div class="instagram"></div>
+                        </a>
                     </div>
                     <div class="tel">
-                        <img src="{% static 'img/tephone.png' %}" alt="">
+                        <img src='img/tephone.png' alt="">
                         <p>+7 (931) 824-63-92</p>
                     </div>
                 </div>
@@ -44,38 +46,42 @@
             <div class="info">
                 <div class="left">
                     <h1>Ваша проблема - это наша забота</h1>
-                    <p>Мы работаем с юридическими и физическими лицами. Использование в работе  спецтехники ставит компанию перед необходимостью организации процесса ее транспортировки.</p>
+                    <p>Мы работаем с юридическими и физическими лицами. Использование в работе  спецтехники ставит
+                        компанию перед необходимостью организации процесса ее транспортировки.</p>
                     <div class="information">
                         <div class="first_block">
                             <span class="plus">
-                                <img src="{% static 'img/group.png' %}">
+                                <img src='img/group.png'>
                                 <p>Отличный персонал!</p>
                             </span>
                             <span class="plus">
-                                <img src="{% static 'img/cash.png' %}">
+                                <img src='img/cash.png'>
                                 <p>Выгодные цены!</p>
                             </span>
                         </div>
                         <div class="second_block">
                             <span class="plus">
-                                <img src="{% static 'img/Vector car.png' %}">
+                                <img src='img/Vector car.png'>
                                 <p>Лучшие эвакуаторы!</p>
                             </span>
                             <span class="plus">
-                                <img src="{% static 'img/time.png' %}">
+                                <img src='img/time.png'>
                                 <p>Круглосуточно!</p>
                             </span>
                         </div>
                     </div>
                     <a href="#form1"><button>Свяжитесь со мной</button></a>
                 </div>
-    
+
                 <div class="right">
                     <menu>
                         <ul>
-                            <li><a id="Evacuation_a"    onclick="Evacuation()">Эвакуация    </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Evacuation_img"></li>
-                            <li><a id="Auto_park_a"     onclick="Auto_park()">Авто парк     </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Auto_park_img"></li>
-                            <li><a id="Sto_a"           onclick="Sto()">СТО                 </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Sto_img"></li>
+                            <li><a id="Evacuation_a" onclick="Evacuation()">Эвакуация</a><img
+                                    src='img/pc_ver/Ellipse.png' id="Evacuation_img"></li>
+                            <li><a id="Auto_park_a" onclick="Auto_park()">Авто парк</a><img src='img/pc_ver/Ellipse.png'
+                                    id="Auto_park_img"></li>
+                            <li><a id="Sto_a" onclick="Sto()">СТО</a><img src='img/pc_ver/Ellipse.png' id="Sto_img">
+                            </li>
                         </ul>
                     </menu>
                 </div>
@@ -90,31 +96,31 @@
             <p class="header">Стоимость транспортировки машин всегда рассчитывается в индивидуальном порядке.</p>
             <div class="merchandisers">
                 <div class="merchandise">
-                    <img src="{% static 'img/truck(icon).png' %}" alt="">
+                    <img src='img/truck(icon).png' alt="">
                     <h2>Грузовики</h2>
                     <p>Массой до 8 т.</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise">
-                    <img src="{% static 'img/jeep.png' %}" alt="">
+                    <img src='img/jeep.png' alt="">
                     <h2>Кросоверы</h2>
                     <p>Массой до 6 т</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise" style="margin-right: 0;">
-                    <img src="{% static 'img/moto(icon).png' %}" alt="">
+                    <img src='img/moto(icon).png' alt="">
                     <h2>Мототехника</h2>
                     <p>Массой до 1 т</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise">
-                    <img src="{% static 'img/car(icon).png' %}" alt="">
+                    <img src='img/car(icon).png' alt="">
                     <h2>Легковые</h2>
                     <p>Массой до 5 т.</p>
                     <span class="cost">от 1500₽</span>
                 </div>
                 <div class="merchandise">
-                    <img src="{% static 'img/Pricep.png' %}" alt="">
+                    <img src='img/Pricep.png' alt="">
                     <h2>Прицепы</h2>
                     <p>Массой до 11 т</p>
                     <span class="cost">от 1500₽</span>
@@ -125,27 +131,11 @@
         <div class="form" id="form1">
             <div class="form_for_user">
                 <form action="." method="post">
-                    {% csrf_token %}
-                        <h1>Готовы ?</h1>
-                        <p>Заполните форму</p>
-                        {{ form.phone }}
-                        {% if form.errors %}
-                            <div class="error">
-                                {% for error in form.phone.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-
-                        {% endif %}
-                        {{ form.name }}
-
-                        {% if press == "1.1" %}
-                            <div class="send">
-                                <span>Ваша заявка успешно отправлена</span>
-                            </div>
-                        {% else %}
-                            <button name='button' onclick="Evacuation()", onclick="send({{ press }})" value="evacuation">Рассчитать стоимость</button>
-                        {% endif %}
+                    <h1>Готовы ?</h1>
+                    <p>Заполните форму</p>
+                    <input type="text" placeholder="Введите телефон">
+                    <input type="text" placeholder="Имя">
+                    <button name='button' onclick="Evacuation()" value="evacuation">Рассчитать стоимость</button>
                 </form>
             </div>
         </div>
@@ -162,15 +152,21 @@
                         <p>помощь на дорогах</p>
                     </div>
                 </div>
-        
+
                 <div class="right">
                     <div class="soc">
-                        <a href="https://vm.tiktok.com/ZSJ1HBccP/"><div class="tik_tok"></div></a>
-                        <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw"><div class="youtube"></div></a>
-                        <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
+                        <a href="https://vm.tiktok.com/ZSJ1HBccP/">
+                            <div class="tik_tok"></div>
+                        </a>
+                        <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw">
+                            <div class="youtube"></div>
+                        </a>
+                        <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag">
+                            <div class="instagram"></div>
+                        </a>
                     </div>
                     <div class="tel">
-                        <img src="{% static 'img/tephone.png' %}" alt="">
+                        <img src='img/tephone.png' alt="">
                         <p>+7 (931) 824-63-92</p>
                     </div>
                 </div>
@@ -205,13 +201,16 @@
                     </div>
                     <a href="#form2"><button>Свяжитесь со мной</button></a>
                 </div>
-    
+
                 <div class="right">
                     <menu>
                         <ul>
-                            <li><a id="Evacuation_a2"    onclick="Evacuation()">Эвакуация    </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Evacuation_img2"></li>
-                            <li><a id="Auto_park_a2"     onclick="Auto_park()">Авто парк     </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Auto_park_img2"></li>
-                            <li><a id="Sto_a2"           onclick="Sto()">СТО                 </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Sto_img2"></li>
+                            <li><a id="Evacuation_a2" onclick="Evacuation()">Эвакуация </a><img
+                                    src='img/pc_ver/Ellipse.png' id="Evacuation_img2"></li>
+                            <li><a id="Auto_park_a2" onclick="Auto_park()">Авто парк </a><img
+                                    src='img/pc_ver/Ellipse.png' id="Auto_park_img2"></li>
+                            <li><a id="Sto_a2" onclick="Sto()">СТО </a><img src='img/pc_ver/Ellipse.png' id="Sto_img2">
+                            </li>
                         </ul>
                     </menu>
                 </div>
@@ -221,58 +220,41 @@
 
         <div class="clearfix"></div>
 
-        <div class="form"  id="form2">
-                <div class="form_for_user">
-                    <h1>Требования</h1>
-                    <div class="treb">
-                        <div class="info">
-                            <span>
-                                <img src="{% static 'img/done.png' %}" alt="">
-                                <div class="info">
-                                    <h1>Возраст</h1>
-                                    <p>от 21 года</p>
-                                </div>
-                            </span>
-                            <span>
-                                <img src="{% static 'img/done.png' %}" alt="">
-                                <div class="info">
-                                    <h1>Стаж</h1>
-                                    <p>от 3-х лет</p>
-                                </div>
-                            </span>
-                            <span>
-                                <img src="{% static 'img/done.png' %}" alt="">
-                                <div class="info">
-                                    <h1>Смартфон</h1>
-                                    <p>Andoid/IOS</p>
-                                </div>
-                            </span>
-                        </div>
+        <div class="form" id="form2">
+            <div class="form_for_user">
+                <h1>Требования</h1>
+                <div class="treb">
+                    <div class="info">
+                        <span>
+                            <img src='img/done.png' alt="">
+                            <div class="info">
+                                <h1>Возраст</h1>
+                                <p>от 21 года</p>
+                            </div>
+                        </span>
+                        <span>
+                            <img src='img/done.png' alt="">
+                            <div class="info">
+                                <h1>Стаж</h1>
+                                <p>от 3-х лет</p>
+                            </div>
+                        </span>
+                        <span>
+                            <img src='img/done.png' alt="">
+                            <div class="info">
+                                <h1>Смартфон</h1>
+                                <p>Andoid/IOS</p>
+                            </div>
+                        </span>
                     </div>
-                    <form action="." method="post">
-                    {% csrf_token %}
-                        <h1>Готовы ?</h1>
-                        <p>Заполните форму</p>
-                        {{ form.phone }}
-                        {% if form.errors %}
-                            <div class="error">
-                                {% for error in form.phone.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-
-                        {% endif %}
-                        {{ form.name }}
-
-                        {% if press == "1.2" %}
-                            <div class="send">
-                                <span>Ваша заявка успешно отправлена</span>
-                            </div>
-                        {% else %}
-                            <button name='button' onclick="Auto_park()" value="avtoPark">Рассчитать стоимость</button>
-                        {% endif %}
-                    </form>
                 </div>
+                <form action="." method="post">
+                    <h1>Готовы ?</h1>
+                    <p>Заполните форму</p>
+                    <input type="text" placeholder="Введите телефон">
+                    <button name='button' onclick="Auto_park()" value="avtoPark">Рассчитать стоимость</button>
+                </form>
+            </div>
         </div>
 
     </div>
@@ -288,15 +270,21 @@
                         <p>помощь на дорогах</p>
                     </div>
                 </div>
-        
+
                 <div class="right">
                     <div class="soc">
-                        <a href="https://vm.tiktok.com/ZSJ1HBccP/"><div class="tik_tok"></div></a>
-                        <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw"><div class="youtube"></div></a>
-                        <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
+                        <a href="https://vm.tiktok.com/ZSJ1HBccP/">
+                            <div class="tik_tok"></div>
+                        </a>
+                        <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw">
+                            <div class="youtube"></div>
+                        </a>
+                        <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag">
+                            <div class="instagram"></div>
+                        </a>
                     </div>
                     <div class="tel">
-                        <img src="{% static 'img/tephone.png' %}" alt="">
+                        <img src='img/tephone.png' alt="">
                         <p>+7 (931) 824-63-92</p>
                     </div>
                 </div>
@@ -313,13 +301,16 @@
                         <p>7 дней в неделю с 9:00 до 23:00</p>
                     </div>
                 </div>
-    
+
                 <div class="right">
                     <menu>
                         <ul>
-                            <li><a id="Evacuation_a3"    onclick="Evacuation()">Эвакуация    </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Evacuation_img3"></li>
-                            <li><a id="Auto_park_a3"     onclick="Auto_park()">Авто парк     </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Auto_park_img3"></li>
-                            <li><a id="Sto_a3"           onclick="Sto()">СТО                 </a><img src="{% static 'img/pc_ver/Ellipse.png' %}" id="Sto_img3"></li>
+                            <li><a id="Evacuation_a3" onclick="Evacuation()">Эвакуация </a><img
+                                    src='img/pc_ver/Ellipse.png' id="Evacuation_img3"></li>
+                            <li><a id="Auto_park_a3" onclick="Auto_park()">Авто парк </a><img
+                                    src='img/pc_ver/Ellipse.png' id="Auto_park_img3"></li>
+                            <li><a id="Sto_a3" onclick="Sto()">СТО </a><img src='img/pc_ver/Ellipse.png' id="Sto_img3">
+                            </li>
                         </ul>
                     </menu>
                 </div>
@@ -333,14 +324,14 @@
             <div class="text">
                 <div class="line">
                     <div class="block">
-                        <img src="{% static 'img/sto/diagnostik.png' %}">
+                        <img src='img/sto/diagnostik.png'>
                         <div class="info">
                             <h1>Диагностика</h1>
                             <p>Комплексная диагностика автомобилей всех марок в СПб.</p>
                         </div>
                     </div>
                     <div class="block">
-                        <img src="{% static 'img/sto/remont.png' %}">
+                        <img src='img/sto/remont.png'>
                         <div class="info">
                             <h1>Ремонт</h1>
                             <p>Выполняем более 200 видов работ для 70 марок автомобилей, запчасти в наличии.</p>
@@ -349,14 +340,15 @@
                 </div>
                 <div class="line">
                     <div class="block">
-                        <img src="{% static 'img/sto/tex_obsl.png' %}">
+                        <img src='img/sto/tex_obsl.png'>
                         <div class="info">
                             <h1>Тех обслуживание</h1>
-                            <p>Проверка, регулировка узлов и замена тех. жидкостей, согласно рекомендациям завода производителя.</p>
+                            <p>Проверка, регулировка узлов и замена тех. жидкостей, согласно рекомендациям завода
+                                производителя.</p>
                         </div>
                     </div>
                     <div class="block">
-                        <img src="{% static 'img/sto/maliar.png' %}">
+                        <img src='img/sto/maliar.png'>
                         <div class="info">
                             <h1>Малярный цех</h1>
                             <p>Выполнение покрасочных работ любой сложности, различные виды и типы покраски.</p>
@@ -365,7 +357,7 @@
                 </div>
                 <div class="line">
                     <div class="block">
-                        <img src="{% static 'img/sto/skyp_bit_auto.png' %}">
+                        <img src='img/sto/skyp_bit_auto.png'>
                         <div class="info">
                             <h1>Скупка битых авто</h1>
                             <p>Покупка вашего автомобиля в любому стостоянии по выгодной цене</p>
@@ -382,21 +374,21 @@
                 <div class="treb">
                     <div class="info">
                         <span>
-                            <img src="{% static 'img/done.png' %}" alt="">
+                            <img src='img/done.png' alt="">
                             <div class="info">
                                 <h1>Возраст</h1>
                                 <p>от 21 года</p>
                             </div>
                         </span>
                         <span>
-                            <img src="{% static 'img/done.png' %}" alt="">
+                            <img src='img/done.png' alt="">
                             <div class="info">
                                 <h1>Стаж</h1>
                                 <p>от 3-х лет</p>
                             </div>
                         </span>
                         <span>
-                            <img src="{% static 'img/done.png' %}" alt="">
+                            <img src='img/done.png' alt="">
                             <div class="info">
                                 <h1>Смартфон</h1>
                                 <p>Andoid/IOS</p>
@@ -405,27 +397,10 @@
                     </div>
                 </div>
                 <form action="." method="post">
-                    {% csrf_token %}
-                        <h1>Готовы ?</h1>
-                        <p>Заполните форму</p>
-                        {{ form.phone }}
-                        {% if form.errors %}
-                            <div class="error">
-                                {% for error in form.phone.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-
-                        {% endif %}
-                        {{ form.name }}
-
-                        {% if press == "1.3" %}
-                            <div class="send">
-                                <span>Ваша заявка успешно отправлена</span>
-                            </div>
-                        {% else %}
-                            <button name='button' onclick="send({{ press }})" value="STO">Рассчитать стоимость</button>
-                        {% endif %}
+                    <h1>Готовы ?</h1>
+                    <p>Заполните форму</p>
+                    <input type="text" placeholder="Введите телефон">
+                    <button name='button' value="STO">Рассчитать стоимость</button>
                 </form>
             </div>
         </div>
@@ -448,12 +423,18 @@
             </menu>
             <div class="right">
                 <div class="soc">
-                    <a href="https://vm.tiktok.com/ZSJ1HBccP/"><div class="tik_tok"></div></a>
-                    <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw"><div class="youtube"></div></a>
-                    <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag"><div class="instagram"></div></a>
+                    <a href="https://vm.tiktok.com/ZSJ1HBccP/">
+                        <div class="tik_tok"></div>
+                    </a>
+                    <a href="https://youtube.com/channel/UCQQGtzXOhH865fBiEAUQknw">
+                        <div class="youtube"></div>
+                    </a>
+                    <a href="https://instagram.com/aleks_nebitnekrashen?r=nametag">
+                        <div class="instagram"></div>
+                    </a>
                 </div>
                 <div class="tel">
-                    <img src="{% static 'img/pc_ver/tel.png' %}" alt="">
+                    <img src='img/pc_ver/tel.png' alt="">
                     <p>+7 (931) 824-63-92</p>
                 </div>
             </div>
@@ -461,4 +442,5 @@
         <div class="clearfix"></div>
     </footer>
 </body>
+
 </html>
